@@ -10,11 +10,11 @@ console.log(initialScroll)
 
 let qty = 1, main = null, next = null
 // Add child elements in .section-stick as number of sections exist
-// Array(sectionsQty)
-//   .fill()
-//   .forEach(() => {
-//     sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
-//   })
+//Array(sectionsQty)
+  //.fill()
+  //.forEach(() => {
+  //  sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
+  //})
 console.log('SLIDE', qty)
 // Listening to scroll event
 window.onscroll = () => {
@@ -38,10 +38,9 @@ window.onscroll = () => {
         next.style.transform = 'translateY(100vh)'
         qty--
       }
-      // Scroll progressbar cześć kuba :D
-      //HEJCA (<','>)   B====D O:>  <3
-    //   const active = document.querySelector('.section-stick .stick.active')
-    //   active.style.top = (62 + 30) * (qty - 1) + 'px'
+      // Scroll progressbar 
+      // const active = document.querySelector('.section-stick .stick.active')
+      // active.style.top = (62 + 30) * (qty - 1) + 'px'
     }
     console.log('SLIDE', qty)
     // Wait for the scrolling to finish to reset the values

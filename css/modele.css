@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     font-size: 80px;
     font-weight: 600;
@@ -33,12 +34,12 @@ body::-webkit-scrollbar {
     display: none;
   }
   
-  .container {
-      width: 100%;
-      height: calc(100vh * 3);
-      position: relative;
+ .container {
+    width: 100%;
+    height: calc(100vh * 3);
+    position: relative;
   }
-  #stopkaS1{
+#stopkaS1{
     position:fixed;
     float: right;
     justify-content: center;
@@ -50,11 +51,12 @@ body::-webkit-scrollbar {
     display: flex;
     font-size: 40px;
     background-color: transparent;
-    color: white;
+    color: black;
 }
 #logoMain{
     position: fixed;
     left: 20px;
+    top: 1px;
 }
 #headerText{
     text-decoration: none;
@@ -66,4 +68,55 @@ body::-webkit-scrollbar {
     flex-direction: row;
     left: 0px;   
     align-self: left;
+}   
+#EV p{
+    font-size: 15px;
+}
+#EV img{
+    position: relative;
+    top: 0px;
+    height: 150px;
+}
+#tytuł {
+    font-size: 400px;
+}
+#headerText{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#test {
+    font-size: 30px;
+
+}
+#catTitle {
+    font-family: 'Roboto', sans-serif;   
+    position: relative;
+    font-size: 30px;
+    top: 40px;
+}
+#catTitle2 {
+    position:fixed;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    height: 94px;
+    width: auto;
+    display: flex;
+    font-size: 100px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#headerText2{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
 }
