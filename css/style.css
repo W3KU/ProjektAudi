@@ -83,8 +83,8 @@ body::-webkit-scrollbar {
 }
 #moreQ4{
     border-radius: 12px;
+    transition: 0.3s;
     border-color: transparent;
-    transition-duration: 40ms;
     color: black;
     text-decoration: none;
 }
@@ -94,6 +94,7 @@ body::-webkit-scrollbar {
 #headerText{
     text-decoration: none;
     color: black;
+    transition: 0.3s;
     font-size: 30px;
     padding: 30px;
     position: relative;
@@ -101,4 +102,8 @@ body::-webkit-scrollbar {
     flex-direction: row;
     left: 0px;   
     align-self: left;
+}
+
+#headerText:hover{
+    color: grey;
 }

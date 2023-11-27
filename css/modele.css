@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 #stopkaS1{
     position:fixed;
     float: right;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     top: 0px;
     left: 300px;
@@ -68,7 +68,11 @@ body::-webkit-scrollbar {
     flex-direction: row;
     left: 0px;   
     align-self: left;
+    transition: 0.3s;
 }   
+#headerText:hover{
+    color: grey;
+}
 #EV p{
     font-size: 15px;
 }
@@ -87,9 +91,26 @@ body::-webkit-scrollbar {
     align-self: center;
     justify-content: center;
 }
-#test {
-    font-size: 30px;
+#modelText{
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: auto;
 
+    justify-content: center;
+    justify-items: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s;
+}
+#modelText:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;
 }
 #catTitle {
     font-family: 'Roboto', sans-serif;   
@@ -111,12 +132,47 @@ body::-webkit-scrollbar {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
-#headerText2{
+#modelText2{
     text-decoration: none;
     position: relative;
     display: flex;
     align-self: center;
     justify-content: center;
-    font-size: 15px;
+    border: solid 1px black;
+    border-radius: 10px;
     color: black;
+    transition: 0.3s;
+    font-size: 15px;
+    padding: 15px;
+}
+#modelText2:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+td a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: center;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: black;
+}
+#search{
+    position: fixed;
+    right: 50px;
+    color: black;
+    text-decoration: none;
+}
+#test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
