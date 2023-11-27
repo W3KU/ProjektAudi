@@ -1,0 +1,132 @@
+#Map{
+    border: solid 3px black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+}
+#stopkaS1{
+    background-color: transparent;
+    position:fixed;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 300px;
+    height: 94px;
+    width: auto;
+    display: flex;
+    font-size: 40px;
+    color: white;
+    border-bottom: solid 3px black;
+}
+#headerText{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 30px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 0px;   
+    align-self: left;
+}
+#headerText:hover{
+    color: grey;
+}
+#logoMain{
+    position: fixed;
+    left: 20px;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #eae8f6;
+    overflow: hidden scroll;
+    -ms-overflow-style: none;
+}
+#title{
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    top: 50px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: rgb(76, 76, 76)
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: black;
+}
+#search{
+    position: fixed;
+    right: 50px;
+    color: black;
+    text-decoration: none;
+}
+#kontakt{
+    border: solid 2px black;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    top: 120px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+}
+#testowanie{
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    border: solid 2px black;
+    border-radius: 10px;
+    position: fixed;
+    float: right;
+    top: 200px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    height: 500px;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#link{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 0px;   
+    align-self: left;
+    margin: 0px;
+}
+#link:hover{
+    color: green;
+}
+.daneKontaktu{
+    margin: 5px;
+}
+#testowanie p{
+    position: relative;
+    
+    
+}

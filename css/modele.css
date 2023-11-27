@@ -176,3 +176,29 @@ td a{
     align-items: center;
 
 }
+.image-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    top: 200px;
+}
+
+  .animate-image {
+    max-width: 100%;
+    transform: translateX(-100%);
+  }
+  .slide-in {
+    animation: slide-in 1s ease forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
