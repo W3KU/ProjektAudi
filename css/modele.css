@@ -1,19 +1,110 @@
 :root{
     --time-animation: 0.6s;
 }
+
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #eae8f6;
     overflow: hidden scroll;
     -ms-overflow-style: none;
 }
-.section {
+
+header {
     width: 100%;
-    height: 100vh;
+    height: 100px;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+header nav {
+    position: fixed;
+    z-index: 2000;
+    background-color: #eae8f6;
+    width: 100%;
+    height: calc(100vh - 100px);
+    transform: translateY(-100vh);
+}
+
+header nav ul {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav #search {
+    width: 100%;
+}
+
+
+.section-stick {
+margin: auto;
+position: fixed;
+right: 50px;
+bottom: 50px;
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+align-items: center;
+justify-content: flex-start;
+z-index: 1000;
+}
+
+.section-stick .stick,
+.section-stick .active {
+width: 13px;
+height: 13px;
+border: none;
+border-radius: 9px;
+}
+
+.section-stick .stick {
+position: relative;
+background-color: rgba(255, 255, 255, 0.4);
+transition: all var(--time-animation) ease-in-out;
+}
+
+.section-stick .active {
+position: absolute;
+z-index: 20;
+background-color: #000000;
+box-shadow: 0px 0px 12px 1px rba(0,0,0,0.5);
+}
+
+.section {
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 100px;
     left: 0;
     right: 0;
     display: flex;
@@ -39,20 +130,6 @@ body::-webkit-scrollbar {
     height: calc(100vh * 3);
     position: relative;
   }
-#stopkaS1{
-    position:fixed;
-    float: right;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;
-    left: 300px;
-    height: 94px;
-    width: auto;
-    display: flex;
-    font-size: 40px;
-    background-color: transparent;
-    color: black;
-}
 #logoMain{
     position: fixed;
     left: 20px;
@@ -70,17 +147,41 @@ body::-webkit-scrollbar {
     align-self: left;
     transition: 0.3s;
 }   
+
 #headerText:hover{
     color: grey;
 }
-#EV p{
-    font-size: 15px;
+
+#EV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+#EV p{
+    font-size: 10px;
+    margin: 0;
+}
+
 #EV img{
     position: relative;
     top: 0px;
-    height: 150px;
+    height: 100px;
 }
+
+.product {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.product-feature {
+    display: flex;
+}
+
 #tytuł {
     font-size: 400px;
 }
@@ -92,15 +193,13 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 #modelText{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 7px 5px;
     text-decoration: none;
     position: relative;
     display: flex;
     align-self: center;
     text-align: center;
     width: auto;
-
     justify-content: center;
     justify-items: center;
     border: solid 1px black;
@@ -117,6 +216,7 @@ body::-webkit-scrollbar {
     position: relative;
     font-size: 30px;
     top: 40px;
+    z-index: 10px;
 }
 #catTitle2 {
     position:fixed;
@@ -143,7 +243,7 @@ body::-webkit-scrollbar {
     color: black;
     transition: 0.3s;
     font-size: 15px;
-    padding: 15px;
+    padding: 5px;
 }
 #modelText2:hover{
     background-color: rgb(73, 73, 73);
@@ -166,7 +266,6 @@ td a{
 }
 #search{
     position: fixed;
-    right: 50px;
     color: black;
     text-decoration: none;
 }
@@ -176,29 +275,26 @@ td a{
     align-items: center;
 
 }
-.image-container {
-    width: 300px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    left: 0px;
-    top: 200px;
-}
 
-  .animate-image {
-    max-width: 100%;
-    transform: translateX(-100%);
-  }
-  .slide-in {
-    animation: slide-in 1s ease forwards;
-  }
-  
-  @keyframes slide-in {
-    from {
-      transform: translateX(-100%);
+@media screen and (min-width: 720px) {
+    header {
+        justify-content: space-between;
+        padding: 0px 25px;
     }
-    to {
-      transform: translateX(0);
+
+    header nav ul {
+        display: flex;
     }
-  }
+
+    #EV img{
+        height: 90px;
+    }
+    
+    #EV p{
+        font-size: 15px;
+    }
+
+    .product {
+        display: flex;
+    }
+}

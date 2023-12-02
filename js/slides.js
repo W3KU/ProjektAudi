@@ -2,19 +2,19 @@ const TIME_OUT = 600 // It should be the same transition time of the sections
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('.section').length
 
-// const sectionStick = document.querySelector('.section-stick')
+const sectionStick = document.querySelector('.section-stick')
 let startFlag = true
 let initialScroll = window.scrollY;
 
 console.log(initialScroll)
 
 let qty = 1, main = null, next = null
-// Add child elements in .section-stick as number of sections exist
-//Array(sectionsQty)
-  //.fill()
-  //.forEach(() => {
-  //  sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
-  //})
+//Add child elements in .section-stick as number of sections exist
+Array(sectionsQty)
+  .fill()
+  .forEach(() => {
+   sectionStick.innerHTML = sectionStick.innerHTML + '<div class="stick"></div>'
+  })
 console.log('SLIDE', qty)
 // Listening to scroll event
 window.onscroll = () => {
@@ -39,8 +39,8 @@ window.onscroll = () => {
         qty--
       }
       // Scroll progressbar 
-      // const active = document.querySelector('.section-stick .stick.active')
-      // active.style.top = (62 + 30) * (qty - 1) + 'px'
+      const active = document.querySelector('.section-stick .stick.active')
+      active.style.top = (13 + 30) * (qty - 1) + 'px'
     }
     console.log('SLIDE', qty)
     // Wait for the scrolling to finish to reset the values
