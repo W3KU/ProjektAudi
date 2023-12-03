@@ -5,5 +5,5 @@ let navOpen = false;
 
 logo.addEventListener('click', () => {
     navOpen = !navOpen;
-    nav.style.transform = navOpen ? 'translateY(0)' : 'translateY(-100vh)';
+    nav.style.top= navOpen ? '70px' : '100vh';
 });

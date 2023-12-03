@@ -32,12 +32,15 @@ header {
 }
 
 header nav {
-    position: fixed;
+    position: absolute;
+    left: 0;
+    top: -100vh;
     z-index: 2000;
     background-color: #eae8f6;
     width: 100%;
-    height: calc(100vh - 100px);
-    transform: translateY(-100vh);
+    height: 100vh;
+    /* transform: translateY(-100vh); */
+
 }
 
 header nav ul {
@@ -45,7 +48,6 @@ header nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -130,12 +132,12 @@ body::-webkit-scrollbar {
     height: calc(100vh * 3);
     position: relative;
   }
-#logoMain{
+.logoMain{
     position: fixed;
     left: 20px;
     top: 1px;
 }
-#headerText{
+.headerText{
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -148,23 +150,23 @@ body::-webkit-scrollbar {
     transition: 0.3s;
 }   
 
-#headerText:hover{
+.headerText:hover{
     color: grey;
 }
 
-#EV{
+.EV{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#EV p{
+.EV p{
     font-size: 10px;
     margin: 0;
 }
 
-#EV img{
+.EV img{
     position: relative;
     top: 0px;
     height: 100px;
@@ -180,6 +182,8 @@ body::-webkit-scrollbar {
 
 .product-feature {
     display: flex;
+    position: relative;
+    top: 20px;
 }
 
 #tytuł {
@@ -211,20 +215,18 @@ body::-webkit-scrollbar {
     background-color: rgb(73, 73, 73);
     color: white;
 }
-#catTitle {
+.catTitle {
     font-family: 'Roboto', sans-serif;   
     position: relative;
-    font-size: 30px;
     top: 40px;
     z-index: 10px;
 }
-#catTitle2 {
+.catTitle2 {
     position:fixed;
     float: right;
     justify-content: center;
     align-items: center;
-    top: 0px;
-    height: 94px;
+    top: 100px;
     width: auto;
     display: flex;
     font-size: 100px;
@@ -276,7 +278,7 @@ td a{
 
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     header {
         justify-content: space-between;
         padding: 0px 25px;
@@ -286,11 +288,11 @@ td a{
         display: flex;
     }
 
-    #EV img{
+    .EV img{
         height: 90px;
     }
     
-    #EV p{
+    .EV p{
         font-size: 15px;
     }
 
@@ -298,3 +300,107 @@ td a{
         display: flex;
     }
 }
+@media screen and (max-width: 400px){
+    header {
+        justify-content: space-between;
+    }
+    header nav ul {
+        display: flex;
+    }
+    .EV{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .EV img{
+        height: 40px;
+    }
+    .EV p{
+        font-size: 15px;
+    }
+    .catTitle{
+        font-size: 30px;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    header nav {
+        position: fixed;
+        z-index: 2000;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 20px;
+        height: calc(100vh - 800px);
+        transform: translateY(-100vh);
+    
+    }
+    
+    header nav ul {
+        margin-top: 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+    }
+    header nav ul li a:hover{
+        color: grey;
+    }
+    
+    header img {
+        position: center;
+        display: flex;
+        height: 30px;
+    }
+    
+    header nav #search {
+        width: 100%;
+    }
+    .product {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .product-feature {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        top: 20px;
+        font-size: 20px;
+    }
+    .product-feature img{
+        height: 100px;
+    }
+    #menu-items{
+        margin-top: 20px;
+    }
+    .catTitle2{
+        font-size: 30px;
+        top: 200px;
+    }
+}
+    

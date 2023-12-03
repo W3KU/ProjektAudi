@@ -6,7 +6,7 @@
     width: 1000px;
     height: 500px;
 }
-#stopkaS1{
+.stopkaS1{
     background-color: transparent;
     position:fixed;
     float: right;
@@ -21,7 +21,7 @@
     color: white;
     border-bottom: solid 3px black;
 }
-#headerText{
+.headerText{
     text-decoration: none;
     color: black;
     transition: 0.3s;
@@ -33,10 +33,10 @@
     left: 0px;   
     align-self: left;
 }
-#headerText:hover{
+.headerText:hover{
     color: grey;
 }
-#logoMain{
+.logoMain{
     position: fixed;
     left: 20px;
 }
