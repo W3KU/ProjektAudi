@@ -5,5 +5,11 @@ let navOpen = false;
 
 logo.addEventListener('click', () => {
     navOpen = !navOpen;
-    nav.style.top= navOpen ? '70px' : '100vh';
+
+    const width = window.innerWidth;
+
+    if (width < 720) {
+        nav.style.top= navOpen ? '100px' : '100vh';
+    }
+
 });

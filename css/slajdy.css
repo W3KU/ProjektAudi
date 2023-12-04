@@ -1,0 +1,82 @@
+:root {
+    --time-animation: 0.6s;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eae8f6;
+    overflow: hidden scroll;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.section-stick {
+    margin: auto;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+}
+
+.section-stick .stick,
+.section-stick .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 9px;
+}
+
+.section-stick .stick {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #969595;
+    transition: all var(--time-animation) ease-in-out;
+}
+
+.section-stick .active {
+    border: none;
+    position: absolute;
+    z-index: 20;
+    background-color: #000000;
+    box-shadow: 0px 0px 12px 1px rba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    height: calc(calc(100vh - 100px) * 3);
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all var(--time-animation) ease-in-out;
+    z-index: 0;
+}
+
+.section:not(.s1) {
+    transform: translateY(calc(100vh - 100px));
+}

@@ -6,21 +6,6 @@
     width: 1000px;
     height: 500px;
 }
-.stopkaS1{
-    background-color: transparent;
-    position:fixed;
-    float: right;
-    justify-content: center;
-    align-items: center;
-    top: 0px;
-    left: 300px;
-    height: 94px;
-    width: auto;
-    display: flex;
-    font-size: 40px;
-    color: white;
-    border-bottom: solid 3px black;
-}
 .headerText{
     text-decoration: none;
     color: black;
