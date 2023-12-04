@@ -27,6 +27,7 @@
     #przyciskJQ
     {
         float: left;
-        position: fixed;
+        position: absolute;
+        
     }
 }

@@ -72,10 +72,14 @@ footer{
     top: calc(100vh - 60vh);
     align-items: center;
     justify-content: center;
+    border-top: 1px dashed black;
 }
 .contact{
     display: flex;
     justify-content: space-between;
+}
+#login {
+    background-color: transparent;
 }
 @media screen and (min-width: 720px){
     .panel {
@@ -90,7 +94,7 @@ footer{
         -moz-box-shadow: 0 0 2px silver;
         box-shadow: 0 0 2px silver;
         position: relative;
-        top: 100px;
+        top: 200px;
     }
     label{
         display: block;
@@ -130,16 +134,31 @@ footer{
     input[type="submit"] {
         width: 70px;
         padding: 5px 13px;
-        border: 1px solid #005f85;
+        border: 1px solid #005678;
         color: white;
         text-shadow: 0 0 1px black;
-        background-color: #98c9dc;
+        background-color: hsl(197, 49%, 73%);
         position: relative;
         left: 180px;
+    }
+    input[type="submit"]:hover{
+        background-color: hsl(197, 49%, 63%);
+        cursor: pointer;
+        z-index: 1000;
     }
     #panel, input[type="submit"] {
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
     }
+    footer{
+        position: relative;
+        display: flex;
+        width: calc(100vw - 10px);
+        border-top: 1px dashed silver;
+    }
+    #login {
+        background-color: transparent;
+    }
+
 }

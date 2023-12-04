@@ -8,7 +8,7 @@ logo.addEventListener('click', () => {
 
     const width = window.innerWidth;
 
-    if (width < 720) {
+    if (width < 760) {
         nav.style.top= navOpen ? '100px' : '100vh';
     }
 
