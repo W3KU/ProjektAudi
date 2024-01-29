@@ -24,11 +24,11 @@
         <img id="logo" src="../zdjęcia/logoStrona.png" alt="Audi" />
         <nav id="main-nav">
           <ul>
-            <li><a href="../index.html">Strona główna</a></li>
-            <li><a href="./modele.html">Modele</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-            <li><a href="./logowanie.html">Zaloguj się</a></li>
+            <li><a href="../index.php">Strona główna</a></li>
+            <li><a href="./modele.php">Modele</a></li>
+            <li><a href="./galeria.php">Galeria</a></li>
+            <li><a href="./kontakt.php">Kontakt</a></li>
+            <li><a href="./logowanie.php">Zaloguj się</a></li>
             <li>
               <div id="search">
                 <a href="https://theuselessweb.com/">

@@ -43,7 +43,7 @@
 }
 
 .EV p {
-	font-size: 10px;
+	font-size: 17px;
 	margin: 0;
 }
 .product {
@@ -91,7 +91,6 @@
 	color: black;
 	transition: 0.3s;
 }
-
 #modelText:hover {
 	background-color: rgb(73, 73, 73);
 	color: white;
@@ -134,8 +133,7 @@
 	text-decoration: none;
 }
 
-
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 760px) {
 	.EV {
 		gap: 30px;
 		height: 470px;

@@ -16,10 +16,26 @@
     position: relative;
     top: 100px;
 }
+.register_panel
+{
+
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    background: #fff;
+    border: 1px solid silver;
+    font: 8px/1.4 "Poppins", sans-serif;
+    letter-spacing: -1px;
+    -webkit-box-shadow: 0 0 2px silver;
+    -moz-box-shadow: 0 0 2px silver;
+    box-shadow: 0 0 2px silver;
+    position: relative;
+    top: 50px;
+}
 label{
     display: block;
     width: 260px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     color: #696969;
     font-size: 16px;
     text-shadow: 0 0 1px silver;
@@ -27,7 +43,7 @@ label{
 form {
     margin: 0;
 }
-#username, #password {
+#email, #password {
     display: block;
     width: 360px;
     margin: 0 auto;
@@ -36,7 +52,19 @@ form {
     outline: 5px solid #ebebeb;
     font-size: 22px;
 }
-#username:focus, #password:focus {
+#fname, #lname, #email, #password, #confirm_password {
+    display: block;
+    width: 360px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    border: 1px solid silver;
+    outline: 5px solid #ebebeb;
+    font-size: 22px;
+}
+#fname:focus, #lname:focus, #email:focus, #password:focus, #confirm_password:focus {
+    outline: 5px solid #e5f2f8;
+}
+#email:focus, #password:focus {
     outline: 5px solid #e5f2f8;
 }
 .lower {
@@ -95,6 +123,20 @@ footer{
         box-shadow: 0 0 2px silver;
         position: relative;
         top: 200px;
+    }
+    .register_panel{
+        width: 600px;
+        margin: 0 auto;
+        padding: 15px 0 0;
+        background: #fff;
+        border: 1px solid silver;
+        font: 16px/1.4 "Poppins", sans-serif;
+        letter-spacing: -1px;
+        -webkit-box-shadow: 0 0 2px silver;
+        -moz-box-shadow: 0 0 2px silver;
+        box-shadow: 0 0 2px silver;
+        position: relative;
+        top: 70px;
     }
     label{
         display: block;

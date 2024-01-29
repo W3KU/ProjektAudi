@@ -1,3 +1,3 @@
-document.getElementById('loginBtn').addEventListener('click', function(){
-    alert("Zalogowano pomyślnie!");
-});
+//document.getElementById('loginBtn').addEventListener('click', function(){
+//    alert("Zalogowano pomyślnie!");
+//});
